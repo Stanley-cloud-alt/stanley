@@ -1,0 +1,18 @@
+
+:root{--bg:#eef1f0;--card:#fbfcfb;--ink:#1c2530;--mute:#5d6b76;--line:#d3dbd9;--ok:#4c7a4f;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root{--bg:#121820;--card:#1b232d;--ink:#e8edf0;--mute:#9aa8b3;--line:#2f3b47}}
+*{box-sizing:border-box}html,body{margin:0}body{background:var(--bg);color:var(--ink);font:16px/1.7 "Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif}
+.w{max-width:520px;margin:0 auto;padding:18px 16px 32px}h1{font-size:22px;margin:0 0 4px}h2{font-size:17px;margin:0}
+.sub,.mute{color:var(--mute);font-size:14px;margin:0}a{color:var(--mute)}
+#prog p{margin:4px 0 14px;font-size:14px}.bar{height:8px;background:var(--line);border-radius:4px;overflow:hidden}.bar i{display:block;height:100%;background:var(--ok);transition:width .5s}
+.ly{background:var(--card);border:1px solid var(--line);border-left:8px solid var(--c);border-radius:6px;padding:12px 14px;margin-top:12px}.ly p{margin:2px 0 8px}
+.it{display:flex;gap:12px;align-items:center;padding:8px 0;border-top:1px solid var(--line);color:inherit;text-decoration:none}
+.th{width:64px;height:64px;border-radius:6px;object-fit:cover;flex:none;background:var(--line);display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--mute);text-align:center}
+.it b{flex:1}.it::after{content:"";}.seen::after{content:"已掃描";color:var(--ok);font-size:13px}
+.hero{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:6px;display:flex;align-items:center;justify-content:center;background:var(--line);color:var(--mute);font-size:14px;margin:12px 0}
+.tag{border-left:4px solid var(--c);padding-left:8px;font-size:14px;margin:4px 0 12px}
+.d p{margin:0 0 8px;font-size:15px}.d span{display:inline-block;min-width:4.5em;font-weight:700}ol{padding-left:22px;margin:6px 0 0;font-size:15px}
+button{font:inherit;background:none;border:1px solid var(--line);color:var(--mute);border-radius:6px;padding:6px 12px;margin-top:16px}
+.qr{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:14px}.qr div{background:#fff;color:#111;border:1px solid var(--line);border-radius:6px;padding:10px;text-align:center;font-size:13px}.qr .c{display:flex;justify-content:center;margin-bottom:6px}
+@media print{.sub,a.back{display:none}body{background:#fff}}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}.chip{margin:0;border-radius:999px;padding:6px 14px;color:var(--ink)}.chip[aria-pressed="true"]{background:var(--c);border-color:var(--c);color:#fff}.lyl{display:block;color:inherit;text-decoration:none}.lyl h2{display:flex;justify-content:space-between}.seen .ok{display:inline}.ok{display:none;color:var(--ok);font-size:13px;font-weight:400}.ly.seen::after{content:none}
